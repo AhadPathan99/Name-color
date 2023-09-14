@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>choose color</title>
+	<style>
+		.main{
+			margin:150px 0px 0px 300px; 
+
+		}
+		.main input{
+			font-size: 50px;
+		}
+		.main h1{
+			font-size: 40px;
+		}
+	
+	</style>
+</head>
+<body>
+
+<div class="main">
+	<input type="text" placeholder="your name" id="a"><br><br>
+	<input type="text" placeholder="color name" id="b"><br><br>
+	<input type="button" value="click" onclick="go()">
+	<h1 id="c"></h1>
+</div>
+<script>
+	function go() {
+
+		window.alert("Chal thik hai tention mat le tera kam ho gaya !")
+		// body...
+		var name,color;
+		name=document.getElementById("a").value;
+		color=document.getElementById("b").value;
+		document.getElementById("c").innerHTML  ="Welcome   "+name;
+		document.getElementById("c").style.color  =color;
+
+	}
+
+</script>
+
+
+</body>
+</html>
